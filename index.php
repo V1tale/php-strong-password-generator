@@ -16,15 +16,11 @@ include __DIR__ . "/functions.php";
 <body>
     <main>
         <div class="container">
-            <form action="index.php" method="GET">
+            <form action="functions.php" method="GET">
                 <label class="" for="get-length">Di quanti caratteri vuoi che sia lunga la tua password?:</label>
                 <input  class="form-control" type="number" id="get-length" name="number">
                 <button class="btn btn-primary">Invia</button>
             </form>
-            <div class="result">
-                <h2>Ecco la tua password: <?php echo $randomNumbers ?></h2>
-                <?php echo $alert ?>
-            </div>
         </div>
     </main>
 </body>
